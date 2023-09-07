@@ -21,6 +21,8 @@ cd ..  && cd Infrastructure/  &&  dotnet new classlib -o CleanArchitecture.Persi
 cd .. &&  cd Presentation/ && dotnet new webapi -o CleanArchitecture.WebAPI
 cd .. && cd .. && mkdir tests
 cd tests && dotnet new xunit -o CleanArchitecture.UnitTests && cd ..
+cd tests && dotnet new xunit -o CleanArchitecture.IntegrationTests && cd ..
+cd tests && dotnet new xunit -o CleanArchitecture.FunctionalTests && cd ..
 ```
 ### Comandos para adicionar os projetos a solution
 ```bash
@@ -47,8 +49,9 @@ dotnet run --project ./src/Presentation/CleanArchitecture.WebAPI/CleanArchitectu
 ```
 
 ### Comando para criar arquivo padrão do gitignore
+```bash
 dotnet new gitignore
-
+```
 
 ## Screenshots
 
