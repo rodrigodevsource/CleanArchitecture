@@ -17,7 +17,7 @@ mkdir CleanArchitecture && cd CleanArchitecture
 dotnet new sln -n CleanArchitecture
 mkdir src && cd src/ && mkdir Core && mkdir Infrastructure && mkdir Presentation
 cd Core/ && dotnet new classlib -o CleanArchitecture.Application && dotnet new classlib -o CleanArchitecture.Domain && cd CleanArchitecture.Domain/ && mkdir Entities && mkdir Interfaces && cd ..
-cd ..  && cd Infrastructure/  &&  dotnet new classlib -o CleanArchitecture.Persistence
+cd ..  && cd Infrastructure/  &&  dotnet new classlib -o CleanArchitecture.Persistence && cd CleanArchitecture.Persistence/ && mkdir Context && mkdir Repositories && cd ..
 cd .. &&  cd Presentation/ && dotnet new webapi -o CleanArchitecture.WebAPI
 cd .. && cd .. && mkdir tests
 cd tests && dotnet new xunit -o CleanArchitecture.UnitTests && cd ..
