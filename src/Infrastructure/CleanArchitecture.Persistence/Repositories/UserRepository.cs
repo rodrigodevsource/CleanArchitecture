@@ -10,7 +10,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
     {
     }
 
-    public async Task<User> GetByEmail(string email, CancellationToken cancellationToken = default)
+    public async Task<User?> GetByEmail(string email, CancellationToken cancellationToken = default)
     {
         return await Context.Users.FirstOrDefaultAsync(x => x.Email == email, cancellationToken);
     }

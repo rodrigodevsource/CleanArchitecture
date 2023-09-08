@@ -25,7 +25,7 @@ public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
         Context.Remove(entity);
     }
 
-    public async Task<T> Get(Guid id, CancellationToken cancellationToken = default)
+    public async Task<T?> Get(Guid id, CancellationToken cancellationToken = default)
     {
         return await Context.Set<T>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
