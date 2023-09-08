@@ -57,7 +57,7 @@ dotnet new gitignore
 
 ![CleanArch](imgs/the-clean-arch.jpg)
 
-![CleanArch](imgs/1.jpg)
+![CleanArch](imgs/detail-clean-arch.jpg.jpg)
 
 ## Tech Stack
 
